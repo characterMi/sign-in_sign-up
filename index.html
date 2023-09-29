@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/all.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+  <script src="main.js" defer></script>
+</head>
+
+<body>
+
+  <div class="main">
+    <div class="left">
+      <div class="text-container text-sign-in">
+        <h1 class="h1-signin">Welcome Back</h1>
+        <h3 class="h3-signin">Don't Have an account ?</h3>
+      </div>
+      <div class="text-container text-sign-up">
+        <h1 class="h1-signup">Welcome, Friend !</h1>
+        <h3 class="h3-signup">Do you Have an account ?</h3>
+      </div>
+    </div>
+    <form class="sign-in-form">
+      <h1>Sign In</h1>
+      <ul class="links-container">
+        <li><i class="fab fa-facebook"></i></li>
+        <li><i class="fab fa-google-plus"></i></li>
+        <li><i class="fab fa-linkedin"></i></li>
+      </ul>
+      <div class="inp-container">
+        <input type="text" required>
+        <label>Username</label>
+      </div>
+      <div class="inp-container">
+        <input type="password" class="pass1" required>
+        <label>Password</label>
+        <i class="far fa-eye-slash icon" id="ficon"></i>
+      </div>
+      <a href="#" class="forgot-pass">Forgot your Password ?</a>
+      <div class="button">
+        <button id="submit">submit</button>
+      </div>
+    </form>
+    <form class="sign-up-form">
+      <h1>Create Account</h1>
+      <ul class="links-container">
+        <li><i class="fab fa-facebook"></i></li>
+        <li><i class="fab fa-google-plus"></i></li>
+        <li><i class="fab fa-linkedin"></i></li>
+      </ul>
+      <div class="inp-container">
+        <input class="email-input" type="email" required>
+        <label class="email-label">Email</label>
+      </div>
+      <div class="inp-container">
+        <input type="text" required>
+        <label>Username</label>
+      </div>
+      <div class="inp-container">
+        <input type="password" class="pass2" required>
+        <label>Password</label>
+        <i class="far fa-eye-slash icon" id="sicon"></i>
+      </div>
+      <div class="button">
+        <button id="submit">submit</button>
+      </div>
+    </form>
+  </div>
+
+</body>
+
+</html>
