@@ -1,6 +1,7 @@
 const left = document.querySelector(".left");
 const h3_signin = document.querySelector(".h3-signin");
 const h3_signup = document.querySelector(".h3-signup");
+const text_sign_up = document.querySelector(".text-sign-up");
 const sign_up_form = document.querySelector(".sign-up-form");
 const email_input = document.querySelector(".email-input");
 const email_label = document.querySelector(".email-label");
@@ -65,6 +66,7 @@ if (window.innerWidth > 600) {
         gsap.to(".sign-in-form", { duration: 1, opacity: 0 })
         gsap.to(".sign-up-form", { duration: 1, opacity: 1, delay: .8 });
         sign_up_form.style = "visibility: visible"
+        text_sign_up.style = "visibility: visible"
         left.style = "border-radius: 0 0 10px 10px";
     });
 
@@ -75,7 +77,10 @@ if (window.innerWidth > 600) {
         gsap.to(".text-sign-up", { duration: 1, y: "100%", opacity: 0 })
         gsap.to(".sign-in-form", { duration: 1, opacity: 1, delay: .8 })
         gsap.to(".sign-up-form", { duration: 1, opacity: 0 });
-        sign_up_form.style = "visibility: hidden"
+        setTimeout(() => {
+            sign_up_form.style = "visibility: hidden"
+        }, 1000)
+        text_sign_up.style = "visibility: hidden"
         left.style = "border-radius: 10px 10px 0 0";
     })
 }

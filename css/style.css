@@ -255,6 +255,7 @@ body {
     .left .text-sign-up {
         top: 100%;
         transform: translateY(100%);
+        visibility: hidden;
     }
     .text-container h1 {
         font-size: 26px;
